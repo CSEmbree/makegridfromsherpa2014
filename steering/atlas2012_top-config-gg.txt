@@ -1,0 +1,24 @@
+subprocesssteername top-gg.config
+ntupdiroutput outputtop
+ntupdirinput sherpatopinputs
+ntupname NTuple_
+
+# try to replace nprocessnumber 
+nprocessnumber 4 
+#
+#nXbins 30
+#xLow 1.e-8
+#xUp 1
+#xorder 5
+#nQ2bins 2
+#qorder 0
+#q2Low 30624.
+#q2Up  30628.
+#
+#
+griddir data
+Gridnamedir outputtop
+gridname atlas2012_5fb_top_mtt_ljet.txt
+%gridname data/atlas2012_top_ptt_ljet.txt
+%gridname data/atlas2012_top_pttt_ljet.txt
+%gridname data/atlas2012_top_ytt_ljet.txt

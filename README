@@ -1,0 +1,78 @@
+###################################################
+#                 DEPENDANCIES                    #
+###################################################
+Need R and B root files. Currently located in:
+
+  /afs/cern.ch/work/c/cembree/public/sherpa21inputs/
+
+Need access to newest of the following files:
+MyBand.{cxx,h}
+MyCrossSection.{cxx,h}
+MyData.{cxx,h}
+MyEvent.{cxx,h}
+MyFrame.{cxx,h}
+MyFrameData.{cxx,h}
+MyGrid.{cxx,h}
+MyHisto.{cxx,h}
+MyObservable.{cxx,h}
+
+Need access to te PDF sets, currently located:
+
+  /afs/cern.ch/sw/lcg/external/MCGenerators/lhapdf/5.8.8/share/lhapdf/PDFsets
+
+Most of this is taken care of in the following
+setup process but you must change the setup based 
+on your enevrionment
+
+###################################################
+#                    SETUP                        #
+###################################################
+Perform the following:
+
+  source setup.sh
+  make
+
+To prepare the envrionment you source the setupfile
+called '$MYHOME/setuplxplus.sh'. After global envrion
+-ment is setup, then we source the local 'setup.sh'
+script and compile with 'make'.
+
+
+#OLD SETUP
+#  source setuplxplus.sh
+#  make
+
+
+###################################################
+#                   RUNNING                       #
+###################################################
+Executable takes 3 parameters:
+1 - steering file
+2 - data file (...-B.root, ect)
+3 - number of events to run over. If no number is 
+    provided then all events are ran over.
+
+EXAMPLE RUNS:
+Evaluate all B-like with steering file atlastop.txt:
+
+  ./makegridfromsherpa atlastop.txt -B
+
+Evaluate 1 thousand events of B-like w/ steering 
+atlastop.txt
+
+  ./makegridfromsherpa atlastop.txt -B 100000
+
+Evaluate all B-like for ALL B-likefiles with steering
+atlastop.txt
+
+  ./makegridfromherpa atlastop.txt -B*
+
+Evaluate all R-like for ALL R-like files with steering
+atlastop.txt
+
+  ./makegridfromsherpa atlastop.txt -R*
+
+Evaluate all R and B like files with steering atlastop.txt
+
+  ./makegridfromsherpa atlastop.txt -*
+
