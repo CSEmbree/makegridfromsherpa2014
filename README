@@ -58,21 +58,21 @@ Evaluate all B-like with steering file atlastop.txt:
   ./makegridfromsherpa atlastop.txt -B
 
 Evaluate 1 thousand events of B-like w/ steering 
-atlastop.txt
+atlastoptest.txt
 
   ./makegridfromsherpa atlastop.txt -B 100000
 
 Evaluate all B-like for ALL B-likefiles with steering
-atlastop.txt
+atlastoptest.txt
 
   ./makegridfromherpa atlastop.txt -B*
 
 Evaluate all R-like for ALL R-like files with steering
-atlastop.txt
+atlastoptest.txt
 
   ./makegridfromsherpa atlastop.txt -R*
 
 Evaluate all R and B like files with steering atlastop.txt
 
-  ./makegridfromsherpa atlastop.txt -*
+  ./makegridfromsherpa atlastoptest.txt -*
 

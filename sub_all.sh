@@ -25,7 +25,7 @@ echo
 #cp -r $DIR/outputtopsave/* $DIR/outputtop
 # 
 ./makegridfromsherpa $1 -B | tee $1-B.log
-./makegridfromsherpa $1 -R | tee $1-R.log
+./makegridfromsherpa $1 -R | tee $1-R1.log
 #
 #./makegridfromsherpa $1 -B_*  $2 > $1-B_*.log
 #./makegridfromsherpa $1 -R_*  $2 > $1-R_*.log
