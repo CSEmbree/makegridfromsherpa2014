@@ -76,3 +76,19 @@ Evaluate all R and B like files with steering atlastop.txt
 
   ./makegridfromsherpa atlastoptest.txt -*
 
+Evaluate all R and B by first building the phase space
+and then running over it again, all for 10,000 events
+
+  sh sub_test.sh atlastoptest.txt 10000
+
+
+###################################################
+#                    OUTPUT                       #
+###################################################
+phase space output is located in directory outputtop/
+
+makegridfromsherpa output histograms are placed in
+the local directory with the name of the steering
+file with the -B,-R,-* or whatever you ran over at
+the end of the file. These histograms should be co-
+mpared to the ones in directory outputtop/
