@@ -1,0 +1,26 @@
+subprocesssteername top.config
+% directory for output grid
+ntupdiroutput outputtop
+%
+ntupdirinput sherpatop21inputs
+%
+ntupname sherpa21-top-fixedscale
+%
+%ntupname NTuple_B-like
+%
+%
+nprocessnumber 4
+q2Up  3.0e8
+q2Low 2.8e4
+nQ2bins 10
+% overwrite phase space grid
+%fixedinputgridname 
+% directory where data can be found
+%griddir ../MyAnalysis/MyData/top
+%griddir /afs/cern.ch/user/t/tcarli/MyAnalysis/MyData/top
+griddir /afs/cern.ch/user/c/cembree/public/data
+%gridname atlas2012_5fb_top_ptt_ljet.txt
+gridname atlas2012_top_mtt_ljet.txt
+%gridname data/atlas2012_top_ptt_ljet.txt
+%gridname data/atlas2012_top_pttt_ljet.txt
+%gridname data/atlas2012_top_ytt_ljet.txt
